@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">POS System</h1>
+
+    <!-- Nav Tabs for different sections -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#customers">Manage Customers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#store">Manage Store</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#orders">Place Order</a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <!-- Manage Customers -->
+        <div id="customers" class="container tab-pane active"><br>
+            <h3>Manage Customers</h3>
+            <form id="customerForm">
+                <!-- Register/Update Customer -->
+                <div class="form-group">
+                    <label for="customerName">Customer Name:</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Enter customer name">
+                </div>
+                <div class="form-group">
+                    <label for="customerEmail">Email:</label>
+                    <input type="email" class="form-control" id="customerEmail" placeholder="Enter email">
+                </div>
+                <button type="submit" class="btn btn-primary">Register Customer</button>
+                <button type="button" class="btn btn-warning">Update Customer</button>
+            </form>
+
+            <!-- Search, Unregister, Get All Customers -->
+            <hr>
+            <h4>Find or Unregister Customers</h4>
+            <div class="form-group">
+                <label for="searchCustomer">Search Customer:</label>
+                <input type="text" class="form-control" id="searchCustomer" placeholder="Enter customer name">
+            </div>
+            <button class="btn btn-danger">Unregister Customer</button>
+            <button class="btn btn-info">Find Customer</button>
+            <button class="btn btn-success">Get All Customers</button>
+        </div>
+
+        <!-- Manage Store -->
+        <div id="store" class="container tab-pane fade"><br>
+            <h3>Manage Store</h3>
+            <form id="storeForm">
+                <!-- Add/Update Items -->
+                <div class="form-group">
+                    <label for="itemName">Item Name:</label>
+                    <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                </div>
+                <div class="form-group">
+                    <label for="itemPrice">Price:</label>
+                    <input type="text" class="form-control" id="itemPrice" placeholder="Enter item price">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Item</button>
+                <button type="button" class="btn btn-warning">Update Item</button>
+            </form>
+
+            <!-- Remove, Search, Get All Items -->
+            <hr>
+            <h4>Find, Remove, or Get All Items</h4>
+            <div class="form-group">
+                <label for="searchItem">Search Item:</label>
+                <input type="text" class="form-control" id="searchItem" placeholder="Enter item name">
+            </div>
+            <button class="btn btn-danger">Remove Item</button>
+            <button class="btn btn-info">Search Item</button>
+            <button class="btn btn-success">Get All Items</button>
+        </div>
+
+        <!-- Place Order -->
+        <div id="orders" class="container tab-pane fade"><br>
+            <h3>Place Order</h3>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerOrder">Customer Name:</label>
+                    <input type="text" class="form-control" id="customerOrder" placeholder="Enter customer name">
+                </div>
+                <div class="form-group">
+                    <label for="orderItems">Order Items:</label>
+                    <input type="text" class="form-control" id="orderItems" placeholder="Enter item names">
+                </div>
+                <button type="submit" class="btn btn-primary">Save Order</button>
+                <button type="button" class="btn btn-warning">Update Order</button>
+            </form>
+
+            <!-- Search, Delete, Get All Orders -->
+            <hr>
+            <h4>Search, Delete, or Get All Orders</h4>
+            <div class="form-group">
+                <label for="searchOrder">Search Order:</label>
+                <input type="text" class="form-control" id="searchOrder" placeholder="Enter order ID or customer name">
+            </div>
+            <button class="btn btn-danger">Delete Order</button>
+            <button class="btn btn-info">Search Order</button>
+            <button class="btn btn-success">Get All Orders</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

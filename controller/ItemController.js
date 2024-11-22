@@ -1,5 +1,5 @@
-import { item_array } from "../db/database.js";
-import ItemModel from "../model/ItemModel.js";
+import { item_array } from "db/database.js";
+import ItemModel from "model/ItemModel.js";
 
 let selectedItemId = null;
 

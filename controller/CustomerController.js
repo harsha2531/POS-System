@@ -1,5 +1,5 @@
-import { customer_array } from "../db/database.js";
-import CustomerModel from "../model/CustomerModel.js";
+import { customer_array } from "db/database.js";
+import CustomerModel from "model/CustomerModel.js";
 
 
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

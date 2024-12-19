@@ -1,6 +1,6 @@
-import { customer_array } from "db/database.js";
-import { item_array } from "db/database.js";
-import { order_array } from "db/database.js";
+import { customer_array } from "../db/database.js";
+import { item_array } from "../db/database.js";
+import { order_array } from "../db/database.js";
 
 
 // var row_index = null;
